@@ -11,7 +11,7 @@ def add_route(config):
     * ``config``: the ``pyramid.config.Configurator`` object.
     """
     config.add_route('tilecache', '/tilecache{path:.*?}')
-    config.add_view(view='papyrus_tilecache.views:tilecache', route_name='tilecache')
+    config.add_view(view='papyrus_tilecache.views.tilecache', route_name='tilecache')
 
 def includeme(config):
     """ The callable making it possible to include papyrus_tilecache
